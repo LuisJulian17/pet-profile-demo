@@ -1,4 +1,3 @@
-// script.js - pequeño comportamiento para copiar enlace y mensajes
 document.addEventListener('DOMContentLoaded', () => {
   const copyBtn = document.getElementById('copy-link');
   copyBtn.addEventListener('click', async () => {
@@ -11,7 +10,4 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('No se pudo copiar automáticamente. Copia manualmente la URL del navegador.');
     }
   });
-
-  // Si quieres, puedes actualizar dinámicamente algunos campos desde aquí:
-  // document.getElementById('pet-name').textContent = 'Nuevo nombre';
 });
