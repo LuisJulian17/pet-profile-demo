@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Perfil - Michi's • Placa NFC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="page">
+    <section class="card profile-card">
+      <div class="badge">Placa NFC • ID: <span id="nfc-id">NFC-00123</span></div>
+
+      <h1 class="pet-name" id="pet-name">Michi's</h1>
+
+      <div class="photo-wrap">
+        <img src="images/Michis.jpg" alt="Foto de Michi's" id="pet-photo" />
+      </div>
+
+      <div class="info-grid">
+        <div class="info-block">
+          <h3>Dueño</h3>
+          <p id="owner-name">Alexander Pinzón Ricuras</p>
+        </div>
+        <div class="info-block">
+          <h3>Contacto</h3>
+          <p id="owner-contact">+57 312 389 0936</p>
+        </div>
+        <div class="info-block">
+          <h3>Zona</h3>
+          <p id="owner-zone">Inírida, Guainía</p>
+        </div>
+      </div>
+
+      <div class="card section">
+        <h3>Sobre Michi's</h3>
+        <p id="pet-desc">
+          Michi's es una gatica mestiza de tamaño mediano, muy cariñosa y curiosa.
+          Le encantan las siestas al sol, las cajas y jugar con pelotas pequeñas.
+        </p>
+      </div>
+
+      <div class="card section">
+        <h3>Cuidados especiales</h3>
+        <ul id="pet-care">
+          <li>Medicamento diario: 1 comprimido de 5mg en la noche.</li>
+          <li>No dar alimentos con huesos pequeños.</li>
+          <li>Evitar dejar ventanas abiertas sin malla de seguridad.</li>
+        </ul>
+      </div>
+
+      <div class="actions">
+        <a id="whatsapp-btn" class="btn whatsapp" href="https://api.whatsapp.com/send/?phone=573123890936&text&type=phone_number&app_absent=0" target="_blank" rel="noopener">
+          Contactar por WhatsApp
+        </a>
+        <button id="copy-link" class="btn ghost">Copiar enlace del perfil</button>
+      </div>
+
+      <footer class="footer">
+        <p class="footer-note">
+          Placa creada por 
+          <strong>Genuino</strong>
+          <svg class="paw-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="#76d7c4">
+            <path d="M256 512c28.7 0 52-23.3 52-52v-88h-104v88c0 28.7 23.3 52 52 52zm163.2-299.8c-31.3-7.7-65.2 15.6-76.5 52.1-11.4 36.5 3.9 72.6 35.2 80.3 31.3 7.7 65.2-15.6 76.5-52.1 11.4-36.5-3.9-72.6-35.2-80.3zM92.8 212.2c-31.3 7.7-46.6 43.8-35.2 80.3 11.3 36.5 45.2 59.8 76.5 52.1 31.3-7.7 46.6-43.8 35.2-80.3-11.3-36.5-45.2-59.8-76.5-52.1zm128-114.2c-28.7 0-52 32.5-52 72.6 0 40.1 23.3 72.6 52 72.6s52-32.5 52-72.6c0-40.1-23.3-72.6-52-72.6zm70.4 83.6c-20.5 35.3-11.3 82.1 20.5 104.8 31.9 22.7 74.2 8.3 94.7-27.1 20.5-35.3 11.3-82.1-20.5-104.8-31.9-22.7-74.2-8.3-94.7 27.1z"/>
+          </svg>
+          <br>
+          <small>&copy; <span id="year"></span> Genuino. Todos los derechos reservados.</small>
+        </p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // Actualiza automáticamente el año
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
