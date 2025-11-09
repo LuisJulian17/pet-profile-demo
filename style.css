@@ -166,3 +166,40 @@ footer.footer {
     padding: 1rem;
   }
 }
+
+/* Ajuste adicional para asegurar visibilidad en móviles */
+.photo-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.photo-wrap img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+/* Si el nombre desaparece o se oculta */
+.pet-name {
+  color: #333;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-top: 1rem;
+}
+
+/* Refuerzo responsive */
+@media (max-width: 600px) {
+  .photo-wrap img {
+    max-width: 90%;
+  }
+  .pet-name {
+    font-size: 2rem;
+  }
+}
